@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Front-End Class Exercises</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>My Front-End Class Exercises</h1>
+
+    <ol class="list" >
+      <li class="list-item list-item-1">
+        <a class="list-item-link" id="list-item-link-1" href="https://github.com/peppemete/giuseppe-layout">
+          <h2>Layout</h2>
+        </a>
+      </li>
+
+      <li class="list-item list-item-2">
+        <a class="list-item-link" id="list-item-link-2" href="https://github.com/peppemete/Site/tree/master/exercises/exercise_position">
+          <h2>Positioning</h2>
+        </a>
+      </li>
+
+      <li class="list-item list-item-3">
+        <a class="list-item-link" id="list-item-link-3" href="https://github.com/peppemete/Site/tree/master/exercises/exercise-flexbox">
+          <h2>Flex</h2>
+        </a>
+      </li>
+      
+      <li class="list-item list-item-4">
+        <a class="list-item-link" id="list-item-link-4" href="https://github.com/spd-master-web/css-grid-areas-peppemete">
+          <h2>Grid</h2>
+        </a>
+      </li>
+      
+      <li class="list-item list-item-5">
+        <a class="list-item-link" id="list-item-link-5" href="https://github.com/peppemete/swiss-poster">
+          <h2>Swiss Poster</h2>
+        </a>
+      </li>
+      
+      <li class="list-item list-item-6">
+        <a class="list-item-link" id="list-item-link-6" href="https://github.com/peppemete/Giuseppe-exam-27-03-2020">
+          <h2>Exam 27-03</h2>
+        </a>
+      </li>
+
+      <li class="list-item list-item-7">
+        <a class="list-item-link" id="list-item-link-7" href="https://github.com/spd-master-web/css-media-queries-peppemete">
+          <h2>Media Query</h2>
+        </a>
+      </li>
+
+      <li class="list-item list-item-8">
+        <a class="list-item-link" id="list-item-link-8" href="https://github.com/spd-master-web/css-grid-cards-peppemete">
+          <h2>Grids Card responsive</h2>
+        </a>
+      </li>
+
+      <li class="list-item list-item-9">
+        <a class="list-item-link" id="list-item-link-9" href="https://github.com/spd-master-web/css-grid-layout-peppemete">
+          <h2>Grids Layout responsive</h2>
+        </a>
+      </li>
+      
+      <li class="list-item list-item-10">
+        <a class="list-item-link" id="list-item-link-10" href="https://github.com/spd-master-web/exam-08-05-peppemete">
+          <h2>Exam 08-05</h2>
+        </a>
+      </li>
+      
+      <li class="list-item list-item-11">
+        <a class="list-item-link" id="list-item-link-11" href="https://github.com/spd-master-web/css-transitions-and-transforms-peppemete">
+          <h2>CSS Transitions and Transforms</h2>
+        </a>
+      </li>
+        
+      <li class="list-item list-item-12">
+        <a class="list-item-link" id="list-item-link-12" href="https://github.com/spd-master-web/css-animations-peppemete">
+          <h2>CSS Animations</h2>
+        </a>
+      </li>
+        
+      <li class="list-item list-item-13">
+        <a class="list-item-link" id="list-item-link-13" href="https://github.com/spd-master-web/27-05-2020-peppemete">
+          <h2>Exam 27-05</h2>
+        </a>
+      </li>
+
+      <li class="list-item list-item-14">
+        <a class="list-item-link" id="list-item-link-14" href="https://github.com/spd-master-web/gsap-card-peppemete">
+          <h2>GSAP Cards</h2>
+        </a>
+      </li>
+
+      <li class="list-item list-item-15">
+        <a class="list-item-link" id="list-item-link-15" href="https://github.com/spd-master-web/milton-glaser-hommage-peppemete">
+          <h2>Milton Glaser</h2>
+        </a>
+      </li>
+
+      <li class="list-item list-item-16">
+        <a class="list-item-link" id="list-item-link-16" href="https://github.com/peppemete/Configurator">
+          <h2>Configurator</h2>
+        </a>
+      </li>
+
+    </ol>
+      
+  </div>
+<script>
+  for (let index = 1; index < 17; index++) {
+    let elem=document.querySelector(".list-item-"+index);
+    elem.style.backgroundImage="url(img/list-item-background-"+index+".png)";
+    let link=document.getElementById("list-item-link-"+index);
+    link.addEventListener("mouseover", function(){elem.style.backgroundSize="cover"});
+    link.addEventListener("mouseleave", function(){elem.style.backgroundSize="contain"});
+  }
+
+</script>
+  
+</body>
+</html>
